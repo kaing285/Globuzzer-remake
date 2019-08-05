@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./job-application.css">
+    </head>
+    <body>
+        <nav class="Navigation nav-bar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../assets/img/globuzzer-logo.png" alt="Globuzzer Logo"></a>            </div>
+                <div class="dropdown show">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon ion-ios-contact"></i>
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Edit profile</a>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </div>
+                <div class="dropdown show">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="DrawerToggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Post a job</a>
+                        <a class="dropdown-item" href="#">Job list</a>
+                        <a class="dropdown-item" href="#">Job applications</a>
+                        <a class="dropdown-item" href="#">Your plan</a>
+                    </div>
+                </div>
+        </nav>
+        <main>
+            <div class="job-list">
+                <ol class="breadcrumb">
+                    <i class="fas fa-home"></i>
+                    <li class="breadcrumb-item breadcrumb-dashboard"><a href="../company-dashboard.html">Dashboard</a></li>
+                    <li class="breadcrumb-item breadcrumb-dashboard active">Job application</li>
+                </ol>
+                <h2>Job Application</h2>
+                <div class="filter-search">
+                    <p>Filter your search:</p>
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn">By Category</button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">IT</a>
+                            <a class="dropdown-item" href="#">Design</a>
+                            <a class="dropdown-item" href="#">Content Writer</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn">By Country</button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Finland</a>
+                            <a class="dropdown-item" href="#">Sweden</a>
+                            <a class="dropdown-item" href="#">Norway</a>
+                            <a class="dropdown-item" href="#">Denmark</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn">By date</button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">January</a>
+                            <a class="dropdown-item" href="#">February</a>
+                            <a class="dropdown-item" href="#">March</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-list-holder">
+                    <div class="job-list-controller">
+                        <div class="job-list-controller-item">Active (1)</div>
+                        <div class="job-list-controller-item">Expire (2)</div>
+                        <div class="job-list-controller-item">Saved (3)</div>
+                    </div>
+                    <div class="job-list-info">
+                        <div class="job-item">
+                            <div class="job-info">
+                                <div class="job-name job-info-item">
+                                    <p>Jeremy Grants</p>
+                                </div>
+                                <div class="item--tag job-info-item">IT</div>
+                                <div class="job-posted-date job-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <p>2 days ago</p> 
+                                </div>
+                                <div class="job-place job-info-item">Finland</div>                               
+                            </div>
+                            <div class="applicants">
+                                <div class="job-label">
+                                    <i class="far fa-user"></i>
+                                    <p>Applicants</p>
+                                </div>
+                            </div>
+                            <div class="job-controller">
+                                <div class="job-label controller-item">
+                                    <i class="far fa-eye"></i>
+                                    <p><a href="./candidate-view/candidate-view.html">View</a></p>
+                                </div>
+                                <div class="job-label controller-item">
+                                    <i class="far fa-trash-alt"></i>
+                                    <p>Delete</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div class="job-info">
+                                <div class="job-name job-info-item">
+                                    <p>Emilia Jovatovic</p>
+                                </div>
+                                <div class="item--tag job-info-item">IT</div>
+                                <div class="job-posted-date job-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <p>3 days ago</p> 
+                                </div>
+                                <div class="job-place job-info-item">Finland</div>                               
+                            </div>
+                            <div class="applicants">
+                                <div class="job-label">
+                                    <i class="far fa-user"></i>
+                                    <p>Applicants</p>
+                                </div>
+                            </div>
+                            <div class="job-controller">
+                                <div class="job-label controller-item">
+                                    <i class="far fa-eye"></i>
+                                    <p><a href="./candidate-view/candidate-view.html">View</a></p>
+                                </div>
+                                <div class="job-label controller-item">
+                                    <i class="far fa-trash-alt"></i>
+                                    <p>Delete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

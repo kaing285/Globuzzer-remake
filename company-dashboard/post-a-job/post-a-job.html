@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./post-a-job.css">
+    </head>
+    <body>
+        <nav class="Navigation nav-bar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../assets/img/globuzzer-logo.png" alt="Globuzzer Logo"></a>
+            </div>
+            <div class="dropdown show">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon ion-ios-contact"></i>
+                </a>
+                
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Edit profile</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+            </div>
+            <div class="dropdown show">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="DrawerToggle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </a>
+                
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Post a job</a>
+                    <a class="dropdown-item" href="#">Job list</a>
+                    <a class="dropdown-item" href="#">Job applications</a>
+                    <a class="dropdown-item" href="#">Your plan</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="post-a-job">
+                <ol class="breadcrumb">
+                    <i class="fas fa-home"></i>
+                    <li class="breadcrumb-item breadcrumb-dashboard"><a href="../company-dashboard.html">Dashboard</a></li>
+                    <li class="breadcrumb-item breadcrumb-dashboard active">Post job</li>
+                </ol>
+                <h2>Post a job</h2>
+                <div class="post-a-job-holder">
+                    <!-- Post a job section -->
+                    <div class="post-a-job-information">
+                        <p>Job information</p>
+                        <div class="line-separator"></div>
+                    </div>
+                    <!-- <input type="text" name="Job title" placeholder="Job title*"> -->
+
+                    <div class="company-regist-field">
+                        <div>
+                            <div class="warning-incorrect-input" id="company-name-validation">
+                                <p>Please fill this</p>
+                            </div>
+                            <input type="text" id="company-name" placeholder="Job title *" onkeyup="$('#company-name-validation').removeClass('show-warning-incorrect-input')">
+                        </div>
+        
+                        <div>
+                            <div class="warning-incorrect-input" id="company-country-validation">
+                                <p>Please select one</p>
+                            </div>
+                            <div class="company-regist-select-country" id="select-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <p>Category *</p>
+                                <div class="company-regist-select-country-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div> 
+                                <div id="company-regist-select-country-dropdown" class="dropdown-menu">
+                                    <div class="country dropdown-item" id="finland">Backend</div>
+                                    <div class="country dropdown-item" id="denmark">Front end</div>
+                                    <div class="country dropdown-item" id="norway">Fullstack</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="company-country-validation">
+                                <p>Please select one</p>
+                            </div>
+                            <div class="company-regist-select-country" id="select-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <p>Job type *</p>
+                                <div class="company-regist-select-country-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div> 
+                                <div id="company-regist-select-country-dropdown" class="dropdown-menu">
+                                    <div class="country dropdown-item" id="finland">Intern</div>
+                                    <div class="country dropdown-item" id="denmark">Trainee</div>
+                                    <div class="country dropdown-item" id="norway">Fulltime</div>
+                                    <div class="country dropdown-item" id="norway">Part-time</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="company-country-validation">
+                                <p>Please select one</p>
+                            </div>
+                            <div class="company-regist-select-country" id="select-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <p>Salary *</p>
+                                <div class="company-regist-select-country-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div> 
+                                <div id="company-regist-select-country-dropdown" class="dropdown-menu">
+                                    <div class="country dropdown-item" id="finland">Paid</div>
+                                    <div class="country dropdown-item" id="denmark">Unpaid</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="job-cv-validation">
+                                <p>Please drop an image</p>
+                            </div>
+                            <input type="file" id="image-drop-title" accept="image/*" style="display: none;">
+                            <label for="image-drop-title" class="image-drop-title">
+                                <p>Add an image (only jpg, png)</p>
+                                <i class="far fa-file-alt"></i>
+                            </label>                          
+                        </div>
+                        <div id="deadline-holder">
+                            <div class="warning-incorrect-input" id="job-letter-validation">
+                                <p>Please add a deadline</p>
+                            </div>
+                            <input type="date" id="deadline-title">
+                            
+                            <div class="image-drop-title" id="deadline-display">
+                                <p>Application deadline *</p>
+                                <i class="far fa-calendar-alt"></i>
+                            </div>     
+                        </div>
+                    </div>
+                <!-- Post a job section -->
+                    <div class="post-a-job-information">
+                        <p>Company Information</p>
+                        <div class="line-separator"></div>
+                    </div>
+                    <div class="company-regist-field">
+                        <div>
+                            <div class="warning-incorrect-input" id="company-name-validation">
+                                <p>Please fill this</p>
+                            </div>
+                            <input type="text" id="company-name" placeholder="Company name *" onkeyup="$('#company-name-validation').removeClass('show-warning-incorrect-input')">
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="company-name-validation">
+                                <p>Please fill this</p>
+                            </div>
+                            <input type="text" id="company-name" placeholder="Contact e-mail" onkeyup="$('#company-name-validation').removeClass('show-warning-incorrect-input')">
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="company-name-validation">
+                                <p>Please fill this</p>
+                            </div>
+                            <input type="text" id="company-name" placeholder="Website" onkeyup="$('#company-name-validation').removeClass('show-warning-incorrect-input')">
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="job-cv-validation">
+                                <p>Please drop an image</p>
+                            </div>
+                            <input type="file" id="image-drop-title" accept="image/*" style="display: none;">
+                            <label for="image-drop-title" class="image-drop-title">
+                                <p>Company logo (only jpg, png)</p>
+                                <i class="far fa-file-alt"></i>
+                            </label>                          
+                        </div>
+                    </div>
+                <!-- Post a job section -->
+                    <div class="post-a-job-information">
+                        <p>Location</p>
+                        <div class="line-separator"></div>
+                    </div>
+                    <div class="company-regist-field">
+                        <div>
+                            <div class="warning-incorrect-input" id="company-country-validation">
+                                <p>Please select one</p>
+                            </div>
+                            <div class="company-regist-select-country" id="select-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <p>Select country *</p>
+                                <div class="company-regist-select-country-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div> 
+                                <div id="company-regist-select-country-dropdown" class="dropdown-menu">
+                                    <div class="country dropdown-item" id="finland">Sweden</div>
+                                    <div class="country dropdown-item" id="finland">Norway</div>
+                                    <div class="country dropdown-item" id="finland">Denmark</div>
+                                    <div class="country dropdown-item" id="denmark">Finland</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="warning-incorrect-input" id="company-name-validation">
+                                <p>Please fill this</p>
+                            </div>
+                            <input type="text" id="company-name" placeholder="City *" onkeyup="$('#company-name-validation').removeClass('show-warning-incorrect-input')">
+                        </div>
+                    </div>
+                <!-- Post a job section -->
+                    <div class="post-a-job-information">
+                        <p>Membership plan</p>
+                        <div class="line-separator"></div>
+                    </div>
+                    <div class="package-holder">
+                        <div class="package">
+                            <div class="package-title">
+                                <div class="package-title-mark"></div>
+                                <p>Free</p> 
+                            </div>
+                            <div class="package-content-holder">
+                                <div class="package-content">
+                                    <p> Limited job offers</p>  
+                                </div>
+                                <div class="package-content">
+                                    <p>Access to the dashboard</p>  
+                                </div>
+                                <div class="package-content">
+                                    <p>The lifespan of job offers are limited</p>  
+                                </div>
+                            </div>
+                            <div class="package-price">
+                                    <p>0</p>
+                                    <p>€/month</p>                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-all-plans"><p>See all plans here</p></div>
+                    <div class="line-separator"></div>
+                    <div class="preview-section">
+                        <button class="preview"><a  href="../preview-job/preview-job.html">Preview</a></button>
+                        <span>or <a id="reset" href="#" class="reset">reset-form</a></span> 
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
